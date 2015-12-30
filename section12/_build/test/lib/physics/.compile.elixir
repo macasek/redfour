@@ -1,0 +1,22 @@
+v1.
+{<<"_build/test/lib/physics/ebin/Elixir.Physics.Laws.beam">>,
+ 'Elixir.Physics.Laws',<<"lib/physics/laws.ex">>,
+ ['Elixir.Kernel'],
+ [],[],nil}.
+{<<"_build/test/lib/physics/ebin/Elixir.Calcs.beam">>,'Elixir.Calcs',
+ <<"lib/calcs.ex">>,
+ ['Elixir.Kernel'],
+ [math,erlang,'Elixir.Float'],
+ [],nil}.
+{<<"_build/test/lib/physics/ebin/Elixir.Planet.beam">>,'Elixir.Planet',
+ <<"lib/planets.ex">>,
+ ['Elixir.Kernel.Def','Elixir.Kernel','Elixir.Module','Elixir.Protocol',
+  'Elixir.Physics.Laws','Elixir.Calcs'],
+ [erlang],
+ [],nil}.
+{<<"_build/test/lib/physics/ebin/Elixir.Physics.Rocketry.beam">>,
+ 'Elixir.Physics.Rocketry',<<"lib/physics/rocketry.ex">>,
+ ['Elixir.Kernel','Elixir.Module','Elixir.Access','Elixir.Planet',
+  'Elixir.Physics.Laws','Elixir.Calcs'],
+ [math,erlang],
+ [],nil}.
