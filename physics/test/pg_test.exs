@@ -1,9 +1,13 @@
+# createdb redfour
+#
 # create table solar_flares(
 #   id serial primary key,
 #   classification char(1) not null,
 #   scale decimal(4,2) not null,
 #   date timestamptz not null
 # );
+#
+# psql redfour -c "alter table solar_flares add index int;"
 
 defmodule PGTest do
   use ExUnit.Case
@@ -48,7 +52,7 @@ defmodule PGTest do
     """
     res = Postgrex.Connection.query!(pid, sql, []) |> atomize_column |> transform_result
 
-    IO.inspect res
+    # IO.inspect res
     Postgrex.Connection.stop(pid)
   end
 
